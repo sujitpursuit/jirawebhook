@@ -7,7 +7,7 @@
         {
           "type": "paragraph",
           "content": [
-            { "type": "text", "text": "10 story pts" }
+            { "type": "text", "text": "DUMMY UPDATE-10 story pts" }
           ]
         }
       ]
@@ -19,7 +19,7 @@
         {
           "type": "paragraph",
           "content": [
-            { "type": "text", "text": "* Python Developer - 0.5\n* UI Developer - 1\n* DevOps Engineer - 0.5" }
+            { "type": "text", "text": "* DUMMY UPDATE-Python Developer - 0.5\n* UI Developer - 1\n* DevOps Engineer - 0.5" }
           ]
         }
       ]
