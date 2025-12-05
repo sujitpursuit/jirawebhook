@@ -19,7 +19,7 @@
   "issue": {
     "id": "10006",
     "self": "https://magicworkshop-ai.atlassian.net/rest/api/2/issue/10006",
-    "key": "SCRUM-7",
+    "key": "KAN-11",
     "fields": {
       "statuscategorychangedate": "2025-12-04T21:50:00.528+0530",
       "issuetype": {

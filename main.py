@@ -1,4 +1,7 @@
 import os
+from datetime import datetime
+from zoneinfo import ZoneInfo
+
 import requests
 from fastapi import FastAPI, Request
 from dotenv import load_dotenv
@@ -10,6 +13,12 @@ app = FastAPI()
 JIRA_BASE_URL = "https://magicworkshop-ai.atlassian.net/rest/api/3/issue"
 CLIENT_ID = os.getenv("CLIENT_ID")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET")
+
+
+def get_et_timestamp():
+    """Get current timestamp in US Eastern Time format DD-MM-YY HH:MM:SS"""
+    et_time = datetime.now(ZoneInfo("America/New_York"))
+    return et_time.strftime("%d-%m-%y %H:%M:%S")
 
 
 @app.post("/jira-webhook")
@@ -26,6 +35,9 @@ async def jira_webhook(request: Request):
     if not issue_key:
         return {"error": "No issue key found in payload"}
 
+    # Get timestamp in US ET
+    timestamp = get_et_timestamp()
+
     # Payload to update Jira issue
     update_payload = {
         "fields": {
@@ -36,7 +48,7 @@ async def jira_webhook(request: Request):
                     {
                         "type": "paragraph",
                         "content": [
-                            {"type": "text", "text": "10 story pts"}
+                            {"type": "text", "text": f"WEBHOOK UPDATE-{timestamp}-10 story pts"}
                         ]
                     }
                 ]
@@ -48,7 +60,7 @@ async def jira_webhook(request: Request):
                     {
                         "type": "paragraph",
                         "content": [
-                            {"type": "text", "text": "* Python Developer - 0.5\n* UI Developer - 1\n* DevOps Engineer - 0.5"}
+                            {"type": "text", "text": f"* WEBHOOK UPDATE-{timestamp}-Python Developer - 0.5\n* UI Developer - 1\n* DevOps Engineer - 0.5"}
                         ]
                     }
                 ]
