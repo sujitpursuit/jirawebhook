@@ -1,19 +1,33 @@
+import os
+import requests
 from fastapi import FastAPI, Request
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = FastAPI()
+
+JIRA_BASE_URL = "https://magicworkshop-ai.atlassian.net/rest/api/3/issue"
+CLIENT_ID = os.getenv("CLIENT_ID")
+CLIENT_SECRET = os.getenv("CLIENT_SECRET")
 
 
 @app.post("/jira-webhook")
 async def jira_webhook(request: Request):
     """
-    Receives Jira webhook payload and returns a static response
-    for updating Jira custom fields.
+    Receives Jira webhook payload, extracts issue key,
+    and updates the issue via Jira API.
     """
-    # You can access the incoming payload if needed:
-    # payload = await request.json()
+    payload = await request.json()
 
-    # Return static response
-    return {
+    # Extract issue key from incoming payload
+    issue_key = payload.get("issue", {}).get("key")
+
+    if not issue_key:
+        return {"error": "No issue key found in payload"}
+
+    # Payload to update Jira issue
+    update_payload = {
         "fields": {
             "customfield_10042": {
                 "type": "doc",
@@ -40,6 +54,23 @@ async def jira_webhook(request: Request):
                 ]
             }
         }
+    }
+
+    # Call Jira API to update the issue
+    jira_url = f"{JIRA_BASE_URL}/{issue_key}"
+
+    response = requests.put(
+        jira_url,
+        json=update_payload,
+        auth=(CLIENT_ID, CLIENT_SECRET),
+        headers={"Content-Type": "application/json"}
+    )
+
+    return {
+        "issue_key": issue_key,
+        "jira_url": jira_url,
+        "status_code": response.status_code,
+        "response": response.text if response.text else "OK"
     }
 
 
