@@ -1,0 +1,1 @@
+https://magicworkshop-ai.atlassian.net/rest/api/3/issue/{ISSUE_KEY}

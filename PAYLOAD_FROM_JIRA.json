@@ -1,0 +1,189 @@
+{
+  "'timestamp": 1764875010783,
+  "webhookEvent": "jira:issue_updated",
+  "issue_event_type_name": "issue_updated",
+  "user": {
+    "self": "https://magicworkshop-ai.atlassian.net/rest/api/2/user?accountId=712020%3A82380216-1ee2-4c21-abcb-e610467804af",
+    "accountId": "712020:82380216-1ee2-4c21-abcb-e610467804af",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/6011fee79384ee05b237591f5f1cbfe2?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKM-2.png",
+      "24x24": "https://secure.gravatar.com/avatar/6011fee79384ee05b237591f5f1cbfe2?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKM-2.png",
+      "16x16": "https://secure.gravatar.com/avatar/6011fee79384ee05b237591f5f1cbfe2?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKM-2.png",
+      "32x32": "https://secure.gravatar.com/avatar/6011fee79384ee05b237591f5f1cbfe2?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKM-2.png"
+    },
+    "displayName": "Kishore M",
+    "active": true,
+    "timeZone": "Asia/Kolkata",
+    "accountType": "atlassian"
+  },
+  "issue": {
+    "id": "10006",
+    "self": "https://magicworkshop-ai.atlassian.net/rest/api/2/issue/10006",
+    "key": "SCRUM-7",
+    "fields": {
+      "statuscategorychangedate": "2025-12-04T21:50:00.528+0530",
+      "issuetype": {
+        "self": "https://magicworkshop-ai.atlassian.net/rest/api/2/issuetype/10005",
+        "id": "10005",
+        "description": "Stories track functionality or features expressed as user goals.",
+        "iconUrl": "https://magicworkshop-ai.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+        "name": "Story",
+        "subtask": false,
+        "avatarId": 10315,
+        "entityId": "f53575ad-d0db-4c86-8bd4-93f8929dca86",
+        "hierarchyLevel": 0
+      },
+      "timespent": null,
+      "project": {
+        "self": "https://magicworkshop-ai.atlassian.net/rest/api/2/project/10000",
+        "id": "10000",
+        "key": "SCRUM",
+        "name": "MagicWorkshop",
+        "projectTypeKey": "software",
+        "simplified": true,
+        "avatarUrls": {
+          "48x48": "https://magicworkshop-ai.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10408",
+          "24x24": "https://magicworkshop-ai.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10408?size=small",
+          "16x16": "https://magicworkshop-ai.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10408?size=xsmall",
+          "32x32": "https://magicworkshop-ai.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10408?size=medium"
+        }
+      },
+      "fixVersions": [],
+      "statusCategory": {
+        "self": "https://magicworkshop-ai.atlassian.net/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "New"
+      },
+      "aggregatetimespent": null,
+      "resolution": null,
+      "resolutiondate": null,
+      "workratio": -1,
+      "watches": {
+        "self": "https://magicworkshop-ai.atlassian.net/rest/api/2/issue/SCRUM-7/watchers",
+        "watchCount": 1,
+        "isWatching": true
+      },
+      "issuerestriction": {
+        "issuerestrictions": {},
+        "shouldDisplay": true
+      },
+      "lastViewed": "2025-12-05T00:32:21.318+0530",
+      "created": "2025-12-04T21:50:00.200+0530",
+      "customfield_10020": [
+        {
+          "id": 2,
+          "name": "SCRUM Sprint 0",
+          "state": "active",
+          "boardId": 1,
+          "startDate": "2025-12-04T14:56:07.536Z",
+          "endDate": "2025-12-18T14:56:07.536Z"
+        }
+      ],
+      "customfield_10021": null,
+      "priority": {
+        "self": "https://magicworkshop-ai.atlassian.net/rest/api/2/priority/3",
+        "iconUrl": "https://magicworkshop-ai.atlassian.net/images/icons/priorities/medium_new.svg",
+        "name": "Medium",
+        "id": "3"
+      },
+      "labels": [],
+      "customfield_10016": 5,
+      "customfield_10017": null,
+      "customfield_10019": "0|i0000n:",
+      "timeestimate": null,
+      "aggregatetimeoriginalestimate": null,
+      "versions": [],
+      "issuelinks": [],
+      "assignee": null,
+      "updated": "2025-12-05T00:33:30.783+0530",
+      "status": {
+        "self": "https://magicworkshop-ai.atlassian.net/rest/api/2/status/10000",
+        "description": "",
+        "iconUrl": "https://magicworkshop-ai.atlassian.net/images/icons/statuses/generic.png",
+        "name": "To Do",
+        "id": "10000",
+        "statusCategory": {
+          "self": "https://magicworkshop-ai.atlassian.net/rest/api/2/statuscategory/2",
+          "id": 2,
+          "key": "new",
+          "colorName": "blue-gray",
+          "name": "New"
+        }
+      },
+      "components": [],
+      "timeoriginalestimate": null,
+      "description": "Test JIRA",
+      "timetracking": {},
+      "customfield_10015": null,
+      "security": null,
+      "aggregatetimeestimate": null,
+      "attachment": [],
+      "summary": "Create Rest API",
+      "creator": {
+        "self": "https://magicworkshop-ai.atlassian.net/rest/api/2/user?accountId=712020%3A82380216-1ee2-4c21-abcb-e610467804af",
+        "accountId": "712020:82380216-1ee2-4c21-abcb-e610467804af",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/6011fee79384ee05b237591f5f1cbfe2?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKM-2.png",
+          "24x24": "https://secure.gravatar.com/avatar/6011fee79384ee05b237591f5f1cbfe2?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKM-2.png",
+          "16x16": "https://secure.gravatar.com/avatar/6011fee79384ee05b237591f5f1cbfe2?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKM-2.png",
+          "32x32": "https://secure.gravatar.com/avatar/6011fee79384ee05b237591f5f1cbfe2?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKM-2.png"
+        },
+        "displayName": "Kishore M",
+        "active": true,
+        "timeZone": "Asia/Kolkata",
+        "accountType": "atlassian"
+      },
+      "subtasks": [],
+      "customfield_10040": null,
+      "customfield_10041": null,
+      "customfield_10042": null,
+      "reporter": {
+        "self": "https://magicworkshop-ai.atlassian.net/rest/api/2/user?accountId=712020%3A82380216-1ee2-4c21-abcb-e610467804af",
+        "accountId": "712020:82380216-1ee2-4c21-abcb-e610467804af",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/6011fee79384ee05b237591f5f1cbfe2?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKM-2.png",
+          "24x24": "https://secure.gravatar.com/avatar/6011fee79384ee05b237591f5f1cbfe2?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKM-2.png",
+          "16x16": "https://secure.gravatar.com/avatar/6011fee79384ee05b237591f5f1cbfe2?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKM-2.png",
+          "32x32": "https://secure.gravatar.com/avatar/6011fee79384ee05b237591f5f1cbfe2?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKM-2.png"
+        },
+        "displayName": "Kishore M",
+        "active": true,
+        "timeZone": "Asia/Kolkata",
+        "accountType": "atlassian"
+      },
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "customfield_10001": null,
+      "customfield_10038": null,
+      "environment": null,
+      "duedate": null,
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "votes": {
+        "self": "https://magicworkshop-ai.atlassian.net/rest/api/2/issue/SCRUM-7/votes",
+        "votes": 0,
+        "hasVoted": false
+      }
+    }
+  },
+  "changelog": {
+    "id": "10023",
+    "items": [
+      {
+        "field": "Design",
+        "fieldtype": "custom",
+        "fieldId": "customfield_10038",
+        "from": null,
+        "fromString": null,
+        "to": null,
+        "toString": ""
+      }
+    ]
+  }
+}

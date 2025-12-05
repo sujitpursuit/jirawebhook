@@ -1,0 +1,28 @@
+{
+  "fields": {
+    "customfield_10042": {
+      "type": "doc",
+      "version": 1,
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            { "type": "text", "text": "10 story pts" }
+          ]
+        }
+      ]
+    },
+    "customfield_10041": {
+      "type": "doc",
+      "version": 1,
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            { "type": "text", "text": "* Python Developer - 0.5\n* UI Developer - 1\n* DevOps Engineer - 0.5" }
+          ]
+        }
+      ]
+    }
+  }
+}
